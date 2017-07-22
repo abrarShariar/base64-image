@@ -6,9 +6,7 @@ module.exports = base64ToImage;
 function base64ToImage(dir) {
     return function (req, res, next) {
         var raw = req.body.base64;
-        var raw_filename = req.body.filename;
-        var ext = raw_filename.split('.').pop();
-        var filename = getRandomFileName(ext);
+        var filename = getRandomFileName();
         if (!checkBase64(raw)) return next();
         var base64 = raw.replace(/^data:image\/.;base64,/, "");
         var abs = path.join(dir, filename);
@@ -28,6 +26,6 @@ function checkBase64(raw) {
 }
 
 
-function getRandomFileName(ext) {
-    return Math.random().toString(36).substring(5) + '.' + ext;
+function getRandomFileName() {
+    return Math.random().toString(36).substring(5) + '.jpg';
 }
