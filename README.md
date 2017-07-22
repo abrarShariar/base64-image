@@ -4,14 +4,14 @@ a simple base64 string to image middleware of Express by [turing](https://npmjs.
 
 ### Installation
 ````
-$ npm install base64-image
+$ npm install base64-image-2
 ````
 
 ### Example
 
 server side: 
 ````javascript
-var base64image = require('base64-image');
+var base64image = require('base64-image-2');
 // base64 str will be saved into ./public/uploads dir,
 // check res.locals.image in the next router.
 app.post('/base64/:filename', base64image(path.join(__dirname, './public/uploads')));

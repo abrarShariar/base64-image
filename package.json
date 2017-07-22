@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/abrarShariar/base64-image.git"
   },
-  "author": "abrar",
+  "author": "abrarjs",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/abrarShariar/base64-image/issues"
