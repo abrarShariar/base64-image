@@ -1,22 +1,19 @@
 {
-  "name": "base64-image",
-  "version": "0.1.0",
-  "description": "a simple base64 string to image middleware of Express",
+  "name": "base64-image-2",
+  "version": "1.0.0",
+  "description": "a fork of base64-image with adjusted needs",
   "main": "index.js",
-  "author": "turing <o.u.turing@gmail.com>",
-  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/turingou/base64-image.git"
+    "url": "git+https://github.com/abrarShariar/base64-image.git"
   },
-  "keywords": [
-    "base64",
-    "images",
-    "canvas",
-    "base64-to-image",
-    "base64-image"
-  ],
+  "author": "abrar",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/turingou/base64-image/issues"
-  }
+    "url": "https://github.com/abrarShariar/base64-image/issues"
+  },
+  "homepage": "https://github.com/abrarShariar/base64-image#readme"
 }
